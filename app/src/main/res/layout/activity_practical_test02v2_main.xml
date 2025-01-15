@@ -7,13 +7,33 @@
     android:layout_height="match_parent"
     tools:context=".PracticalTest02v2MainActivity">
 
-    <TextView
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="Hello World!"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:padding="16dp"
+        tools:layout_editor_absoluteX="-16dp"
+        tools:layout_editor_absoluteY="0dp">
+
+        <EditText
+            android:id="@+id/input_word"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Introduceți un cuvânt" />
+
+        <Button
+            android:id="@+id/search_button"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Caută Definiție" />
+
+        <TextView
+            android:id="@+id/definition_output"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:paddingTop="16dp"
+            android:text="Definiția va apărea aici" />
+    </LinearLayout>
+
 
 </androidx.constraintlayout.widget.ConstraintLayout>
