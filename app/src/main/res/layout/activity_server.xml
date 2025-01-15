@@ -5,42 +5,28 @@
     android:id="@+id/main"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".PracticalTest02v2MainActivity">
+    tools:context=".ServerActivity">
 
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="match_parent"
         android:orientation="vertical"
-        android:padding="16dp"
-        tools:layout_editor_absoluteX="0dp"
-        tools:layout_editor_absoluteY="58dp">
-
-        <EditText
-            android:id="@+id/input_word"
-            android:layout_width="match_parent"
-            android:layout_height="73dp"
-            android:hint="Introduceți un cuvânt" />
+        android:padding="16dp">
 
         <Button
-            android:id="@+id/search_button"
+            android:id="@+id/connect_button"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="Caută Definiție" />
+            android:text="Conectează-te la server"
+            android:layout_marginTop="30dp"/>
 
         <TextView
-            android:id="@+id/definition_output"
+            android:id="@+id/server_time_output"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
+            android:text="Rezultatul va apărea aici"
             android:paddingTop="16dp"
-            android:text="Definiția va apărea aici" />
-
-        <Button
-            android:id="@+id/connect_python_button"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_marginTop="30dp"
-            android:text="Connect to python server" />
+            android:textSize="18sp" />
     </LinearLayout>
-
 
 </androidx.constraintlayout.widget.ConstraintLayout>

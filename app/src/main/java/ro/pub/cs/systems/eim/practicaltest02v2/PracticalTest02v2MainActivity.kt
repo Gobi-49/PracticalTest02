@@ -54,6 +54,12 @@ class PracticalTest02v2MainActivity : AppCompatActivity() {
                 Log.d("MainActivity", "Empty input. Prompting user to enter a word.")
             }
         }
+
+        val openServerTimeActivityButton = findViewById<Button>(R.id.connect_python_button)
+        openServerTimeActivityButton.setOnClickListener {
+            val intent = Intent(this, ServerActivity::class.java)
+            startActivity(intent)
+        }
     }
 
     fun getWordDefinition(word: String): String {
